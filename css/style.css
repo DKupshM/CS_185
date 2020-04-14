@@ -50,6 +50,11 @@ a {
     color: black;
 }
 
+a:visited {
+    text-decoration: none;
+    color: green;
+}
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
