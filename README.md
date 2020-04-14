@@ -1,3 +1,3 @@
 # CS_185
 
-This is the first assignment!
+This is the Second assignment!
