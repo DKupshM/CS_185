@@ -1,6 +1,5 @@
 <head>
     <title>Images</title>
-    <script src="image.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/images-syle.css">
 </head>
@@ -15,20 +14,31 @@
 <h1> This is the Image Page! </h1>
 
 <main>
+    <button onclick="topFunction()" id="myBtn" title="Go to Top">To The Top</button>
     <div>
-        <img src="img/dog.jpeg" alt=" Doggy">
+        <img id='dog1' src="img/dog.jpeg" alt=" Doggy" onclick="showImage(this.id)">
     </div>
     <div>
-        <img src="img/dog2.jpeg" alt="Doggy">
+        <img id='dog2' src="img/dog2.jpeg" alt="Doggy" onclick="showImage(this.id)">
     </div>
     <div>
-        <img src="img/dog3.jpeg" alt="Doggy">
+        <img id='dog3' src="img/dog3.jpeg" alt="Doggy" onclick="showImage(this.id)">
     </div>
     <div>
-        <img src="img/dog4.jpeg" alt="Doggy" onclick="showimage('img/dog4.jpeg')">
+        <img id='dog4' src="img/dog4.jpeg" alt="Doggy" onclick="showImage(this.id)">
+    </div>
+    <div>
+        <img id='dog5' src="img/dog5.jpeg" alt="Doggy" onclick="showImage(this.id)">
+    </div>
+    <div>
+        <img id='dog6' src="img/dog6.jpeg" alt="Doggy" onclick="showImage(this.id)">
     </div>
 
     <div id="enlarged-image" class="enlarged-image" onclick="closeimage()">
+        <span class="close">&times;</span>
         <img class="enlarged-image-content" src="img/dog.jpeg" id="img01">
     </div>
 </main>
+
+<script src="button.js"></script>
+<script src="image.js"></script>
