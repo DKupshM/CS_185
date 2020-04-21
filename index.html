@@ -3,27 +3,48 @@
 
 <head>
     <title>Home</title>
-    <!-- link to main stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-    <div class="topnav">
-        <a class="active" href="/CS_185/index.html">Home</a>
-        <a href="/CS_185/images.html">Images</a>
-        <a href="/CS_185/videos.html">Videos</a>
-        <a href="/CS_185/links.html">Links</a>
-    </div>
-    <h1> This is the Text Page! </h1>
-    <div class="container">
-        <div class="blurb">
-            <p>Hello this is something about Me!</p>
-            <p> I am just writing text here. This is where there will be a lot of content. I think its important to
-                fill this with stuff. What will this webpage be about? That is the real mystery. I think this may be
-                enough content. Unsure about that though. Lets end it all right over here!</p>
+<div class="topnav">
+    <a class="active" href="/CS_185/index.html">Home</a>
+    <a href="/CS_185/images.html">Images</a>
+    <a href="/CS_185/videos.html">Videos</a>
+    <a href="/CS_185/links.html">Links</a>
+</div>
 
-        </div><!-- /.blurb -->
+<h1> This is the Text Page! </h1>
+
+<main>
+    <div class="container">
+        <p>Hello this is something about Me!</p>
+        <p> I am just writing text here. This is where there will be a lot of content. I think its important to
+            fill this with stuff. What will this webpage be about? That is the real mystery. I think this may be
+            enough content. Unsure about that though. Lets end it all right over here!</p>
+
+    </div><!-- /.blurb -->
     </div><!-- /.container -->
-</body>
+    </body>
+
+</main>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+</script>
 
 </html>

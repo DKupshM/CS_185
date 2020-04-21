@@ -1,31 +1,34 @@
 <head>
     <title>Images</title>
-    <!-- link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="image.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/images-syle.css">
 </head>
 
-<body>
-    <div class="topnav">
-        <a href="/CS_185/index.html">Home</a>
-        <a class="active" href="/CS_185/images.html">Images</a>
-        <a href="/CS_185/videos.html">Videos</a>
-        <a href="/CS_185/links.html">Links</a>
+<div class="topnav">
+    <a href="/CS_185/index.html">Home</a>
+    <a class="active" href="/CS_185/images.html">Images</a>
+    <a href="/CS_185/videos.html">Videos</a>
+    <a href="/CS_185/links.html">Links</a>
+</div>
+
+<h1> This is the Image Page! </h1>
+
+<main>
+    <div>
+        <img src="img/dog.jpeg" alt=" Doggy">
     </div>
-    <h1> This is the Image Page! </h1>
-    <div class="row">
-        <div class="column">
-            <img src="img/dog.jpeg" alt="Doggy">
-        </div>
-        <div class="column">
-            <img src="img/dog2.jpeg" alt="Doggy">
-        </div>
+    <div>
+        <img src="img/dog2.jpeg" alt="Doggy">
     </div>
-    <div class="row">
-        <div class="column">
-            <img src="img/dog3.jpeg" alt="Doggy">
-        </div>
-        <div class="column">
-            <img src="img/dog4.jpeg" alt="Doggy">
-        </div>
+    <div>
+        <img src="img/dog3.jpeg" alt="Doggy">
     </div>
-</body>
+    <div>
+        <img src="img/dog4.jpeg" alt="Doggy" onclick="showimage('img/dog4.jpeg')">
+    </div>
+
+    <div id="enlarged-image" class="enlarged-image" onclick="closeimage()">
+        <img class="enlarged-image-content" src="img/dog.jpeg" id="img01">
+    </div>
+</main>
